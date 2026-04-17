@@ -2,22 +2,83 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Profile của Việt Quốc</title>
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            margin-top: 100px;
-            background: #f5f5f5;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Việt Quốc | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Xin chào 👋</h1>
-    <h2>Tôi là Việt Quốc</h2>
-    <p>Lập trình viên Java / Web</p>
+
+    <!-- NAVBAR -->
+    <header>
+        <h2 class="logo">VietQuoc</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Xin chào, tôi là <span>Việt Quốc</span></h1>
+        <p>Java Developer | Web Developer</p>
+        <button onclick="scrollToSection('projects')">Xem dự án</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Tôi là lập trình viên chuyên về Java, JSP/Servlet và Web.
+            Đã làm project quản lý bán nội thất theo mô hình MVC.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+
+        <div class="skill">
+            <p>Java</p>
+            <div class="bar"><div style="width: 85%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>HTML/CSS</p>
+            <div class="bar"><div style="width: 80%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar"><div style="width: 70%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>MySQL</p>
+            <div class="bar"><div style="width: 75%"></div></div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Furniture Website</h3>
+            <p>Website quản lý bán nội thất sử dụng Java Servlet + MVC.</p>
+        </div>
+
+        <div class="project">
+            <h3>Coming soon...</h3>
+            <p>Thêm project sau 🚀</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Việt Quốc</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
